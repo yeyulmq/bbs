@@ -7,7 +7,12 @@
 
   <div class="col-lg-3 col-md-3 hidden-sm hidden-xs user-info">
     <div class="card ">
+      @if($user->avatar)
+        <br>
+        <img class="thumbnail img-responsive" src="{{ $user->avatar }}" width="200" />
+      @else
       <img class="card-img-top" src="https://iocaffcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/600/h/600" alt="{{ $user->name }}">
+      @endif
       <div class="card-body">
             <h5><strong>个人简介</strong></h5>
             <p>{{ $user->introduction }}</p>

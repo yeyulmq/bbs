@@ -9,7 +9,7 @@
     <div class="card ">
       @if($user->avatar)
         <br>
-        <img class="thumbnail img-responsive" src="{{ $user->avatar }}" width="200" />
+        <img class="card-img-top" src="{{ $user->avatar }}" alt="{{ $user->name }}" />
       @else
       <img class="card-img-top" src="https://iocaffcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/600/h/600" alt="{{ $user->name }}">
       @endif

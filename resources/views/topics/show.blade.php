@@ -40,7 +40,7 @@
           </div>
 
           <div class="topic-body mt-4 mb-4">
-            {{ $topic->body }}
+            {!! $topic->body !!}
           </div>
           @can('update', $topic)
           <div class="operate">
